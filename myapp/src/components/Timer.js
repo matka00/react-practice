@@ -20,12 +20,12 @@ class Timer extends React.Component {
     render () {
         console.log("render happened")
         return(
-        <>
-            <div>
-                {this.state.time}
-            </div>
-            <button onClick={() => {this.incrementTimer()}}>Click me</button>
-        </> 
+            <>
+                <div>
+                    {this.state.time}
+                </div>
+                <button onClick={() => {this.incrementTimer()}}>Click me</button>
+            </> 
         )
     }
 }
