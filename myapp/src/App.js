@@ -1,13 +1,13 @@
 import logo from './logo.svg';
 import './App.css';
-import PizzaComponent from './components/PizzaComponent/PizzaComponent'
+import Timer from './components/Timer'
 
 function App() {
   return (
     <div className="App">
       <header className="App-header">
+        <Timer />
         <img src={logo} className="App-logo" alt="logo" />
-        <PizzaComponent name="Salami" price="1500"/>
         <p>
           Edit <code>src/App.js</code> and save to reload. alma
         </p>
