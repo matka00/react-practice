@@ -9,6 +9,20 @@ class Timer extends React.Component {
         setInterval(() => {
             this.incrementTimer()
         }, 1000)
+
+        console.log('constructor called')
+    }
+
+    componentDidMount () {
+        console.log('component created')
+    }
+
+    componentDidUpdate () {
+        console.log('something changed')
+    }
+
+    componentWillUnmount () {
+        console.log('we did a change')
     }
 
     incrementTimer () {
@@ -18,7 +32,7 @@ class Timer extends React.Component {
     }
 
     render () {
-        console.log("render happened")
+        console.log('render done')
         return(
             <>
                 <div>

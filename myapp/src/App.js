@@ -1,15 +1,29 @@
 import logo from './logo.svg';
 import './App.css';
-import Timer2 from './components/Timer2';
+import Timer from './components/Timer'
+import { useState } from 'react'
 
 function App() {
+
+  const [showTimer, setShowTimer] = useState(true)
+
+/*   const state = useState(true)
+  console.log(state)
+  const showTimer = state[0]
+  const setShowTimer = state[1]
+ */
+  //ez az első sor hosszabban megírva; a showTimer az állapotot adja vissza, a setShowTimer pedig az állapot változtatására alkalmas függvény
+
+
   return (
     <div className="App">
       <header className="App-header">
-        <Timer2 />
+        {showTimer ? <Timer /> : <div>no timer</div>}
+        <button onClick={() => {setShowTimer(false)}}>hide</button>
+
         <img src={logo} className="App-logo" alt="logo" />
         <p>
-          Edit <code>src/App.js</code> and save to reload. alma
+          alma
         </p>
         <a
           className="App-link"
