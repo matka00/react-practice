@@ -35,7 +35,7 @@ class Timer extends React.Component {
         console.log('render done')
         return(
             <>
-                <div>
+                <div className={(this.state.time >= 5) ? 'blue' : ''}>
                     {this.state.time}
                 </div>
                 <button onClick={() => {this.incrementTimer()}}>Click me</button>
