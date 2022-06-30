@@ -15,7 +15,7 @@ class Timer extends React.Component {
 
     componentDidMount () {
         console.log('component created')
-    }
+    }//a komponens életciklusának a legeslegelső pillanata
 
     componentDidUpdate () {
         console.log('something changed')
@@ -24,6 +24,8 @@ class Timer extends React.Component {
     componentWillUnmount () {
         console.log('we did a change')
     }
+    //a komponensre már nincs szükség --> meg fog szűnni
+    // itt kell felszabadítani azokat a dolgokat, amikre már nem lesz szükség, ha megszűnik a komponens (pl a számlálónk vagy egy fetch)
 
     incrementTimer () {
         this.setState({
